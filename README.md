@@ -1,5 +1,5 @@
 # transcripter
-HTML transcript generator from ELAN files as used on chachalani.com
+HTML transcript generator from ELAN files as used on [chachalani.com](https://chachalani.com/)
 
 I was unhappy with the way that ELAN exports to web (using tables and fixed width lines). For mobile, which most people visiting the site use, I wanted something that would line-rap appropriately, but still have time-alined blocks.
 
