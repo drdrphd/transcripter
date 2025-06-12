@@ -1,0 +1,3 @@
+mp3's must be constant bitrate (NO VBR!!)
+
+ELAN file should be exported WITH any offsets

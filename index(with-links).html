@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>Transcript Converter</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="dr²">
+	<meta name="contributor" content="">
+	<link rel="shortcut icon" 	 href="../favicon.ico" />
+	<link rel="apple-touch-icon" href="../site-icon.png" />
+	<link rel="icon"             href="../site-icon.png" />
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" type="text/css" href="converter.css">
+	<link rel="stylesheet" type="text/css" href="transcript.css">
+	
+</head>
+<body>
+	<div id="main">
+		<div id="info">
+			<h1>ELAN .eaf -> HTML transcript</h1>
+			<h2>Drop ELAN file below</h2>
+		</div>
+		<div id="user-input">
+			<div>
+				<h3>Drag & Drop .eaf<br />
+				or click to upload</h3>
+			</div>
+		</div>
+		<div id="results">
+			<div id="progress-text">
+			</div>
+			<div id="results-grid">
+				<div id="js-output-button">
+					<button id="js-download" disabled>Download</button>
+				</div>
+				<div id="transcript-button">
+					<button id="transcript-download" disabled>Download</button>
+					<div id="loading">
+						Loading...
+						<img src="./loading.gif" height="20" width="20">
+					</div>
+				</div>
+				<pre id="js-output">
+				</pre>
+				<pre id="transcript">
+				</pre>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="WebELAN_v003.js" type="text/javascript" charset="utf-8"></script>
+	<script src="converter_b.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

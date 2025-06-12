@@ -1,0 +1,78 @@
+.transcription-line {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	grid-gap: 1em;
+	align-items: baseline;
+	cursor: pointer;
+}
+.transcription-time {
+	font-family: georgia, sans-serif;
+	font-size: 0.75em;
+	color: gray;
+}
+.transcription-stack {
+	display: block;
+	margin: 0;
+	padding: 0.5em;
+	grid-template-columns: max-content;
+}
+.transcription-block {
+	display: block;
+	padding: 0;
+	font-family: georgia, sans-serif;
+}
+.time-aligned-stack {
+	display: inline-grid;
+	margin: 0;
+	padding: 0;
+	grid-template-columns: max-content;
+	margin-right: 1em;
+}
+.time-aligned-stack > .transcription-block {
+	margin: 0;
+	padding: 0.25em 0.25em 0.25em 0;
+	/* outline: 1px solid lightgray; */
+	/* border-top: none; */
+}
+.time-aligned-stack > .transcription-block:first-child {
+	/* border-top: 1px solid lightgray; */
+}
+.time-aligned-substack {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.time-aligned-substack > .time-aligned-stack {
+	display: inline-block;
+	margin-right: 0.25em;
+	padding: 0;
+}
+.highlight {
+	background-color: #d9f1ff;
+}
+
+.Words {
+	color: blue;
+}
+.Morphemes {
+	color: darkblue;
+}
+.Gloss {
+	color: purple;
+}
+.Sentences {
+	color: black;
+	font-weight: bold;
+}
+.Translation {
+	color: black;
+	font-style: italic;
+}
+.Metadata {
+	color: chocolate;
+}
+.hidden {
+	padding: 0 !important;
+	height: 0px !important;
+	visibility: collapse !important;
+}
